@@ -187,29 +187,3 @@
     <footer>
         <p>&copy; 2024 My Website. All rights reserved.</p>
     </footer>
-
-    <script>
-        let lastScrollTop = 0;
-        const header = document.getElementById('header');
-
-        window.addEventListener('scroll', () => {
-            const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-
-            if (currentScroll > lastScrollTop) {
-                // Scrolling down
-                header.style.top = "-60px"; // Hide the header
-            } else {
-                // Scrolling up
-                header.style.top = "0"; // Show the header
-            }
-            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
-        });
-    </script>
-</body>
-</html>
-
-    <footer>
-        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
-    </footer>
-</body>
-</html>
